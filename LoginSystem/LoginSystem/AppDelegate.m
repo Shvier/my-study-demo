@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +24,13 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    LoginViewController *loginVC = [[LoginViewController alloc] init];
+    UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:loginVC];
+    self.window.rootViewController = naVC;
+    [loginVC release];
+    [naVC release];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

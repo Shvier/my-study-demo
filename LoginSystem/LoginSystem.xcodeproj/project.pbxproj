@@ -13,6 +13,12 @@
 		C06149F71C46546400F7E54D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06149F51C46546400F7E54D /* LaunchScreen.storyboard */; };
 		C0614A021C46546400F7E54D /* LoginSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A011C46546400F7E54D /* LoginSystemTests.m */; };
 		C0614A0D1C46546400F7E54D /* LoginSystemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A0C1C46546400F7E54D /* LoginSystemUITests.m */; };
+		C0614A1C1C46555B00F7E54D /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A1B1C46555B00F7E54D /* LoginView.m */; };
+		C0614A1F1C46586A00F7E54D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A1E1C46586A00F7E54D /* LoginViewController.m */; };
+		C0614A251C46712500F7E54D /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A241C46712500F7E54D /* RegistViewController.m */; };
+		C0614A281C4671E200F7E54D /* RegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A271C4671E200F7E54D /* RegistView.m */; };
+		C0614A2B1C46799A00F7E54D /* WelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A2A1C46799A00F7E54D /* WelcomeView.m */; };
+		C0614A2E1C467B3800F7E54D /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0614A2D1C467B3800F7E54D /* WelcomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +52,18 @@
 		C0614A081C46546400F7E54D /* LoginSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginSystemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0614A0C1C46546400F7E54D /* LoginSystemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginSystemUITests.m; sourceTree = "<group>"; };
 		C0614A0E1C46546400F7E54D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0614A1A1C46555B00F7E54D /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		C0614A1B1C46555B00F7E54D /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		C0614A1D1C46586A00F7E54D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C0614A1E1C46586A00F7E54D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C0614A231C46712500F7E54D /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		C0614A241C46712500F7E54D /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		C0614A261C4671E200F7E54D /* RegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistView.h; sourceTree = "<group>"; };
+		C0614A271C4671E200F7E54D /* RegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistView.m; sourceTree = "<group>"; };
+		C0614A291C46799A00F7E54D /* WelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeView.h; sourceTree = "<group>"; };
+		C0614A2A1C46799A00F7E54D /* WelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeView.m; sourceTree = "<group>"; };
+		C0614A2C1C467B3800F7E54D /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		C0614A2D1C467B3800F7E54D /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +114,8 @@
 		C06149EC1C46546400F7E54D /* LoginSystem */ = {
 			isa = PBXGroup;
 			children = (
+				C0614A301C46870D00F7E54D /* Controller */,
+				C0614A2F1C4686F500F7E54D /* View */,
 				C06149F01C46546400F7E54D /* AppDelegate.h */,
 				C06149F11C46546400F7E54D /* AppDelegate.m */,
 				C06149F31C46546400F7E54D /* Assets.xcassets */,
@@ -130,6 +150,32 @@
 				C0614A0E1C46546400F7E54D /* Info.plist */,
 			);
 			path = LoginSystemUITests;
+			sourceTree = "<group>";
+		};
+		C0614A2F1C4686F500F7E54D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0614A1A1C46555B00F7E54D /* LoginView.h */,
+				C0614A1B1C46555B00F7E54D /* LoginView.m */,
+				C0614A291C46799A00F7E54D /* WelcomeView.h */,
+				C0614A2A1C46799A00F7E54D /* WelcomeView.m */,
+				C0614A261C4671E200F7E54D /* RegistView.h */,
+				C0614A271C4671E200F7E54D /* RegistView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C0614A301C46870D00F7E54D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0614A1D1C46586A00F7E54D /* LoginViewController.h */,
+				C0614A1E1C46586A00F7E54D /* LoginViewController.m */,
+				C0614A2C1C467B3800F7E54D /* WelcomeViewController.h */,
+				C0614A2D1C467B3800F7E54D /* WelcomeViewController.m */,
+				C0614A231C46712500F7E54D /* RegistViewController.h */,
+				C0614A241C46712500F7E54D /* RegistViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0614A1F1C46586A00F7E54D /* LoginViewController.m in Sources */,
+				C0614A1C1C46555B00F7E54D /* LoginView.m in Sources */,
+				C0614A281C4671E200F7E54D /* RegistView.m in Sources */,
 				C06149F21C46546400F7E54D /* AppDelegate.m in Sources */,
+				C0614A2B1C46799A00F7E54D /* WelcomeView.m in Sources */,
+				C0614A2E1C467B3800F7E54D /* WelcomeViewController.m in Sources */,
 				C06149EF1C46546400F7E54D /* main.m in Sources */,
+				C0614A251C46712500F7E54D /* RegistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
