@@ -7,6 +7,7 @@
 //
 
 #import "WelcomeViewController.h"
+#import "HomeViewController.h"
 
 @interface WelcomeViewController ()
 
@@ -29,6 +30,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIButton *continueButton = [UIButton buttonWithType:UIButtonTypeSystem];
+    continueButton.frame = CGRectMake(90, 300, 200, 40);
+    [continueButton setTitle:@"Continue" forState:UIControlStateNormal];
+    [continueButton addTarget:self action:@selector(continueAction) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:continueButton];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,6 +55,13 @@
 #pragma mark --back to login view method
 - (void)backToLoginView {
     [self.navigationController popToRootViewControllerAnimated:YES];
+}
+
+#pragma mark --continue to home view method
+- (void)continueAction {
+    HomeViewController *homeVC = [[HomeViewController alloc] init];
+    [self.navigationController pushViewController:homeVC animated:YES];
+    [homeVC release];
 }
 
 @end

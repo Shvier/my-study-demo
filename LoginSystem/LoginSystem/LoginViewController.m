@@ -68,6 +68,8 @@
     UINavigationController *naVC = [[UINavigationController alloc] initWithRootViewController:registVC];
     naVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self.navigationController presentViewController:naVC animated:YES completion:nil];
+    [registVC release];
+    [naVC release];
 }
 
 #pragma mark --call back keyboard
